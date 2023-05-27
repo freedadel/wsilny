@@ -1,0 +1,581 @@
+{
+
+  "trip": "رحلة",
+  "charge": "شحن",
+  "tripFrom": "الوجهة من",
+  "tripTo": "الوجهة إلى",
+  "write_here": "اكتب هنا...",
+  "search": "بحث",
+  "mytrips": "رحلاتي",
+  "mychat": "محادثاتي",
+  "wassilni": "وصلني",
+  "yourpetispartofourfamily":
+  "Your pet is part of our family",
+
+  "petdeservesmorecare": "Welcome to our\napp",
+
+  "findyournewfriend":
+  "Find the nearest pet\nfrom your location",
+
+  "donthaveapetfindyour":
+  "Choose a location of your for finding\nthe nearest animals for you",
+
+  "allpetneedsarehere": "Wassilni",
+
+  "shopallpetneedsrightfromyourhand":
+  "هنا  ستجد الرعاية لحيوانك الأليف",
+
+  "weprovideallservices":
+  "With our app you'll make life of our\nfurry friends happier",
+  "dear": "عزيزي ",
+  "all_pets": "كل الحيوانات",
+  "find_pet": "البحث عن حيوان",
+  "searchpet": "البحث عن حيوان",
+  "next": "التالي",
+  "darkmode": "الوضع المظلم",
+  "bookNow": "احجز الآن",
+  "clinicinfo": "تفاصيل العيادة",
+  "phone": "الجوال",
+  "currency": "ريال",
+  "add_to_card": "اضافة للسلة",
+  "phoneNumber": "05XXXXXXXX",
+
+  "see_all": "عرض الكل",
+  "all_clinics": "العيادات",
+  "all_products": "المنتجات",
+  "find_clinic": "البحث عن عيادة",
+  "find_product": "البحث عن منتج",
+
+  "rabbit": "Rabbit",
+  "exploremoreonwassilni": "Explore More on Wassilni",
+
+  "booking_date": "تاريخ الحجز",
+  "comments": "ملاحظات",
+  "write_comments": "اكتب ملاحظاتك",
+  "bookdatenow": "احجز الآن",
+
+  "miniature": "Miniature Pinscher",
+
+  "clinicbio": "Great attention and care",
+
+  "clinichours": "الدوام",
+
+  "clinicphone": "الجوال",
+
+  "clinicservices": "الخدمات",
+
+  "clinicdetails": "The clinic is characterized by safety and great care for animals, as the clinic staff is qualified to deal with all animal problems, and the clinic contains rooms prepared for animal comfort",
+
+  "clinicaddress": "الموقع",
+
+  "listbioof": "List bio of your furry friends",
+
+  "charlie": "Charlie",
+
+  "pethome": "بيت الحيوانات",
+
+  "newpet": "حيوان جديد",
+  "from_my_pet": "من حيواناتي",
+  "from_others": "من أخرى",
+  "choose_owner": "اختيار المالك",
+  "newadress": "عنوان جديد",
+  "send": "ارسال",
+  "adopt_request": "طلب تبني",
+  "adopt_request_done": "تم ارسال طلب التبني",
+  "completeformbelow": "اكمل البيانات التالية لإضافة عنوان",
+
+  "selectaddress": "اختر العنوان",
+
+  "addressdetails": "تفاصيل العنوان",
+
+  "setdefultaddress": "هذا هو عنواني الأساسي",
+
+  "housenumberroom": "رقم المنزل, الشقة, الطابق",
+
+  "addyournewfurry": "Add your new furry friend",
+
+  "addphoto": "إضافة صورة",
+
+  "petname": "اسم الحيوان",
+
+  "yourbuddyname": "اسم حيوانك الأليف",
+
+  "typeofpet": "نوع الحيوان",
+
+  "selectdate": "اختر التاريخ",
+
+  "birthdate": "تاريخ الميلاد",
+
+  "gender": "النوع",
+
+  "description": "تفاصيل",
+
+  "shareabouthestory": "اكتب مزيد من الوصف",
+
+  "save": "حفظ",
+
+  "seeall": "عرض الكل",
+
+  "lorem":
+  "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna al iqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+
+  "sendtoadopt": "عرض للتبني",
+  "sort": "فرز وترتيب",
+
+  "activities": "النشاطات",
+
+  "veterinarian": "Veterinarian",
+
+  "pettraining": "Pet Training",
+
+  "grooming": "Grooming",
+
+  "miniaturepinscher": "Miniature Pinscher",
+
+  "addnewpet": "اضافة حيوان جديد",
+
+  "suzy": "Suzy",
+
+  "mainecoon": "Maine Coon",
+
+  "edward": "Edward",
+
+  "hollandlop": "Holland Lop",
+
+  "orderprocessed": "تم تجهيز الطلب",
+
+  "youshippingorderhas": "تم ارسال الطلب",
+
+  "thakyouforyouyrorder":
+  "يتم الآن البحث عن أقرب السائقين",
+
+  "thakyouforyouyradoptrequest":
+  "شكراً لتقدمك بطلب التبني، سيتم الرد عليك في اقرب وقت",
+
+  "thakyouforyouyradoptpet":
+  "شكراً لك لعرض حيوانك الأليف للتبني",
+
+  "adopt_pet_done":"تم اضافة حيوانك الأليف لقائمة التبني",
+
+  "cheerfullyplayful":
+  "Cheerfully, playful friend this lola, she reeds a new home. because her fomer will more and will not be able to make along it",
+
+  "viewall": "عرض الكل",
+
+  "language": "اللغة",
+
+  "orderreceived": "تم استلام الطلب",
+
+  "hereisthedetailofyourorder":
+  "هنا تفاصيل طلبك",
+
+  "orderdetail": "تفاصيل الطلب",
+
+  "deliveringorder": "توصيل الطلب",
+
+  "processingorder": "لم يتم تحديد السائق",
+  "processingbook": "في انتظار التأكيد",
+  "confirmedorder": "تم تأكيد الطلب",
+  "confirmedbook": "تم تأكيد الحجز",
+  "processingadopt": "في انتظار الموافقة",
+  "confirmedadopt": "تمت الموافقة",
+  "newUser": "مستخدم جديد",
+  "usertype": "نوع المستخدم",
+  "customer": "عميل",
+  "driver": "سائق",
+  "addphotolicense": "رخصة القيادة",
+  "addphotocarlicense": "رخصة المركبة",
+  "addphotocarimg": "صورة السيارة",
+  "october": "October 15, 2020",
+
+  "gotomyorder": "طلباتي",
+
+  "listyourallorders": "عرض كل الطلبات",
+
+  "addnewaddress": "اضافة عنوان جديد",
+
+  "promocode": "الرمز الترويجي",
+
+  "enterpromocodehere": "أدخل الرمز الترويجي هنا",
+
+  "shippingaddress": "عنوان التوصيل",
+
+  "orderdetails": "تفاصيل الطلب",
+
+  "paymentmethod": "طريقة الدفع المستخدمة",
+
+  "elephantdoll": "Elephant Doll",
+
+  "dogsweterpink": "Dog Sweater Pink",
+
+  "havepromocode": "هل لديك رمز ترويجي؟",
+
+  "subtotal": "المجموع الفرعي: ",
+
+  "shipping": "الشحن والتوصيل: ",
+
+  "shippings": "الشحن والتوصيل",
+
+  "tax": "Tax[2%]",
+
+  "grandtotal": "المجموع الكلي: ",
+
+  "confirmorder": "تأكيد الطلب",
+
+  "checkout": "شراء",
+
+  "pleasefinishyourpayment": "الرجاء اكمال تفاصيل الطلب",
+
+  "address": "العنوان",
+  "show_more": "عرض المزيد",
+  "show_less": "عرض أقل",
+  "delivery_address": "عنوان التوصيل",
+  "your_address": "العنوان الخاص بك",
+  "addnewpayment": "Add New Payment",
+  "person_name": "الإسم",
+  "person_number": "الجوال",
+  "your_name": "اسمك",
+  "your_number": "رقم جوالك",
+  "payment": "الدفع",
+  "cart": "السلة",
+  "orders": "الطلبات",
+  "currentorders": "الطلبات الحالية",
+  "pastorders": "الطلبات السابقة",
+  "verify": "تحقق",
+  "notverified": "رقم الجوال غير صحيح",
+  "ordersin": "الطلبات الواردة",
+  "confirm": "تأكيد",
+  "addresses": "العناوين",
+  "save_address": "حفظ العنوان",
+  "petowner": "صاحب الحيوان",
+  "listpastorders": "اضغط هنا لعرض الطلبات السابقة",
+  "taylorstreet": "1355 Taylor Street",
+
+  "whiteplains": "White Plains, New York 10601",
+
+  "sycamorestreet": "4191 Sycamore Street",
+
+  "liberycenter": "Liberty Center, Indiana 46766",
+
+  "goodwinavenue": "811 Goodwin Avenue",
+
+  "millwoodwashington": "Millwood, Washington 99212",
+
+  "publishedby": "Published by",
+
+  "lazarus": "St.Lazarus Shelter",
+
+  "froamyou": "3.2km from you",
+
+  "donate": "Donate",
+
+  "allshesneedofyou": "All She's need of you is",
+
+  "water": "Water",
+
+  "walk": "Walk",
+
+  "love": "Love",
+
+  "adoptlola": "Adopt Lola",
+
+  "filter": "Filter",
+
+  "waitingforyou": "Waiting for you",
+
+  "filterproductwithmore":
+  "Filter Products with more specific types",
+
+  "pricerange": "Price Range",
+
+  "price": "السعر",
+
+  "boomer": "Boomer",
+
+  "age": "العمر",
+
+  "weight": "الوزن",
+
+  "sex": "النوع",
+
+  "female": "انثى",
+
+  "popular": "Popular",
+
+  "jakarta": "Jakarta",
+
+  "male": "ذكر",
+
+  "km": "2km",
+
+  "explore": "Explore",
+
+  "brand": "Brand",
+
+  "breed": "الفصيلة",
+
+  "king": "King",
+
+  "pedigree": "Pedigree",
+
+  "baker": "Baker",
+
+  "whiskies": "Whiskies",
+
+  "chomp": "Chomp",
+
+  "pettoys": "Pet Toys",
+
+  "meow": "Meow",
+
+  "basche": "Basche",
+
+  "domino": "Domino",
+
+  "reset": "رجوع",
+  "book_no": "رقم الحجز",
+  "customer_name": "اسم العميل",
+  "pet_name": "اسم الحيوان",
+  "pet_type": "نوع الحيوان",
+  "book_date": "تاريخ الحجز",
+  "book_status": "حالة الحجز",
+  "more_details": "تفاصيل اضافية",
+  "apply": "تطبيق",
+  "book_waiting":"قيد الانتظار",
+  "book_confirmed":"تم التأكيد",
+  "continues": "استمرار",
+  "wanttodelete": "هل تريد حذف الحيوان؟",
+  "deletenow": "حذف الآن",
+  "findandbuy": "جد واشتري احتياجات حيوانك الأليف",
+  "removeconfirm": "تأكيد الحذف",
+  "wanttoremove": "هل انت متأكد؟",
+
+  "acceptconfirm": "تأكيد قبول الطلب",
+  "wanttoaccept": "هل انت متأكد من قبول الطلب؟ ستتم ازالة الحيوان من قائمة التبني",
+
+  "sendconfirm": "تأكيد ارسال الطلب",
+  "wanttosend": "سيتم ارسال بيانات الطلب الى صاحب الحيوان للقبول او الرفض",
+
+
+  "status_changed": "تم تحديث الحالة بنجاح",
+  "yes": "نعم",
+  "no": "لا",
+  "sendtous": "راسلنا",
+  "share": "مشاركة",
+  "loginforbook": "يجب عليك تسجيل الدخول لتتمكن من الحجز",
+  "writehere": "اكتب هنا",
+  "cancelorder": "الغاء الطلب",
+  "searchproduct": "بحث عن منتج",
+
+  "searchclinic": "بحث عن عيادة",
+
+  "bookings": "الحجوزات",
+
+  "all": "All",
+
+  "arrangebasedonthe": "عرض ترتيب المنتجات بناءاً على",
+
+  "latestproducts": "أحدث المنتجات",
+
+  "bestselling": "الأكثر مبيعاً",
+
+  "lowprice": "الأقل سعراً",
+
+  "highestprice": "الأعلى سعراً",
+  "use_qr": "قم بعرض الكود على الموظف ليتأكد من صحة الحجز",
+  "food": "Food",
+
+  "shampoo": "Shampoo",
+
+  "enteryouremailtoreset":
+  "Enter your email to reset your password",
+
+  "continueswithgoogle": "Continue with google",
+
+  "goodtoread": "Good to Read",
+
+  "continueswithfacebook": "مواصلة باستخدام فيسبوك",
+
+  "registerwithemail": "تسجيل الدخول بالبريد الإلكتروني",
+
+  "alredyhaveanacount": "لديك حساب بالفعل؟ ",
+
+  "signin": "تسجيل دخول",
+
+  "profile": "الملف الشخصي",
+
+  "edit": "تعديل",
+
+  "leilasans": "Leila Sans",
+
+  "freedadel": "Freed Adel",
+
+  "kiev": "Kiev",
+
+  "qassim": "Qassim",
+
+  "mypets": "حيواناتي الأليفة",
+  "my_pet_done":"تم اضافة حيوانك بنجاح",
+  "thakyouforyouyrpet":"شكرا لإضافة حيوانك الأليف",
+  "invitefriend": "دعوة أصدقاء",
+
+  "help": "الدعم الفني",
+
+  "setting": "الإعدادات",
+  "settings": "الإعدادات",
+  "edit_settings": "تعديل الإعدادات",
+  "logout": "خروج",
+
+  "bestselingitem": "افضل المنتجات مبيعاً",
+
+  "dogthirt": "Dog Striped T-Shirt",
+
+  "enlephantdoll": "Elephant Doll",
+
+  "doggreysweter": "Dog Sweater Grey",
+
+  "dogpinksweter": "Dog Sweater Pink",
+
+  "dogbearheadcap": "Dog Bear Head Cap",
+
+  "petheadcap": "Pet Head Cap",
+
+  "user": "المستخدم",
+
+  "order": "طلب",
+
+  "loginwithyouraccount":
+  "ادخل بحسابك للمواصلة",
+
+  "email": "البريد الإلكتروني",
+
+  "emailaddress": "عنوان البريد الإلكتروني",
+
+  "password": "كلمة المرور",
+  "newpassword": "كلمة المرور الجديدة",
+
+  "forgotpassword": "نسيت كلمة المرور؟",
+
+  "login": "دخول",
+
+  "donthaveanaccountyet": "ليس لديك حساب حتى الآن؟ ",
+
+  "register": "تسجيل",
+
+  "createanaccounttostart":
+  "قم بإنشاء حساب لبدء الاستخدام",
+
+  "name": "الإسم",
+
+  "yourfullname": "اسمك بالكامل",
+
+  "passwordmustcontainsofcharacter":
+  "Password must contains of character, number, and\nsymbol with minimum 6 characters",
+
+  "bysigningupiagreetothe": "بتسجيلي سأكون موافق على ",
+
+  "termcondition": "الشروط والأحكام",
+
+  "and": "و",
+
+  "privacypolicy": "سياسة الخصوصية",
+
+  "createaccount": "انشاء حساب",
+
+  "alredyhaveanaccount": "لديك حساب بالفعل؟ ",
+
+  "forgotpasswords": "نسيت كلمة المرور",
+
+  "enteryouremailtoresetyourpassword":
+  "أكتب بريدك الالكتروني لإعادة تعيين كلمة المرور",
+
+  "enteryourregisteredemail":
+  "اكتب ايميلك المسجل لنرسل لك رابط خاص بإعادة تعيين كلمة المرور",
+
+  "submit": "ارسال",
+
+  "home": "الرئيسية",
+
+  "hello": "مرحبا",
+
+  "wendi": "Freed,",
+
+  "whatareyoulookingfor": "عن ماذا تبحث؟",
+
+  "category": "التصنيفات",
+
+  "products": "المنتجات",
+
+  "clinics": "العيادات",
+
+  "clinic_name": "اسم العيادة",
+  "service_name": "اسم الخدمة",
+
+  "pets": "الحيوانات الأليفة",
+
+  "shopping": "التسوق",
+
+  "treatment": "العلاج",
+
+  "pethotel": "فندق الحيوانات",
+
+  "adoptions": "التبني",
+  "add_to_adoptions": "عرض حيوان للتبني",
+  "petstatus": "حالة الحيوان",
+
+  "latestoffers": "آخر العروض",
+
+  "discountforpet": "Discount\n10% for pet\nGrooming",
+
+  "pettreaning": "25% off for\npet Training\n& Hotel",
+
+  "petvacs": "التطعيمات",
+  "8th": "التطعيم الثماني للكلاب",
+  "4th": "التطعيم الرباعي للقطط",
+  "rabies": "تطعيم ضد السعار",
+  "fleas_and_ticks": "تطعيم ضد القراد والبراغيث",
+
+  "dogs": "كلاب",
+  "cats": "قطط",
+  "fish": "أسماك",
+  "birds": "طيور",
+  "turtle": "سلاحف",
+  "poultry": "الدواجن",
+  "rodents": "القوارض",
+  "cattle": "الماشية",
+  "others": "أخرى",
+
+  "excellent": "ممتازة",
+  "good": "جيدة",
+  "sick": "مريض",
+
+  "pt_name": "اسم الحيوان",
+  "pt_age": "عمر الحيوان",
+  "pt_city": "المدينة",
+  "pt_breed": "فصيلة الحيوان",
+  "pt_weight": "وزن الحيوان",
+  "pt_description": "وصف الحيوان",
+
+  "pt_name_msg": "الرجاء كتابة اسم الحيوان",
+  "pt_age_msg": "الرجاء كتابة عمر الحيوان",
+  "pt_city_msg": "الرجاء ادخال المدينة",
+  "pt_breed_msg": "الرجاء كتابة فصيلة الحيوان",
+  "pt_weight_msg": "الرجاء كتابة وزن الحيوان",
+  "pt_description_msg": "الرجاء كتابة وصف الحيوان",
+
+  "adoptrequest": "طلبات التبني",
+
+  "wrong_password": "خطأ في الدخول",
+  "fill_phone": "رقم الجوال",
+  "fill_password": "كلمة المرور",
+  "phone_length": "رقم الجوال",
+
+  "wrong_password_msg": "الرجاء التأكد من الجوال وكلمة المرور",
+  "fill_phone_msg": "ادخل رقم الجوال رجاءا",
+  "fill_password_msg": "ادخل كلمة المرور رجاءا",
+  "phone_length_msg": "الرجاء التأكد من رقم الجوال",
+
+  "updateUser": "تحديث البيانات",
+  "updateyourdata": "قم بتحديث بياناتك",
+  "updateNow": "تحديث الآن"
+}

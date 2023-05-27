@@ -1,0 +1,579 @@
+{
+ "trip": "Trip",
+ "charge": "Shipping",
+ "tripFrom": "Trip from",
+ "tripTo": "Trip to",
+ "write_here": "Write here...",
+ "search": "Search",
+ "mytrips": "Trips",
+ "mychat": "Chats",
+ "wassilni": "wassilni",
+ "newUser": "New user",
+ "usertype": "User type",
+ "customer": "Customer",
+ "driver": "Driver",
+ "addphotolicense": "Driving license",
+ "addphotocarlicense": "Vehicle license",
+ "addphotocarimg": "Car photo",
+
+ "yourpetispartofourfamily":
+  "Your pet is part of our family",
+
+ "petdeservesmorecare": "Welcome to our\napp",
+
+ "findyournewfriend":
+  "Find the nearest pet\nfrom your location",
+
+ "donthaveapetfindyour":
+  "Choose a location of your for finding\nthe nearest animals for you",
+
+ "allpetneedsarehere": "Wassilni",
+
+ "shopallpetneedsrightfromyourhand":
+  "Here you can find care with your pet",
+
+ "weprovideallservices":
+  "With our app you'll make life of our\nfurry friends happier",
+
+ "next": "Next",
+ "dear": "Dear ",
+ "darkmode": "Dark Mode",
+ "bookNow": "Book Now",
+ "clinicinfo": "Clinic Info",
+ "phone": "Phone",
+ "phoneNumber": "05XXXXXXXX",
+
+ "settings": "Settings",
+ "edit_settings": "Edit Settings",
+ "language": "Language",
+ "see_all": "See All",
+ "all_clinics": "Clinics",
+ "all_products": "Products",
+ "find_clinic": "Find clinic",
+ "find_product": "Find product",
+
+ "rabbit": "Rabbit",
+ "exploremoreonwassilni": "Explore More on Wassilni",
+
+ "booking_date": "Booking date",
+ "comments": "Comments",
+ "write_comments": "Write your comments",
+ "bookdatenow": "Book an appointment now",
+
+ "miniature": "Miniature Pinscher",
+
+ "clinicbio": "Great attention and care",
+
+ "clinichours": "Worktime",
+
+ "clinicphone": "Phone",
+
+ "clinicservices": "Our Services",
+
+ "clinicdetails": "The clinic is characterized by safety and great care for animals, as the clinic staff is qualified to deal with all animal problems, and the clinic contains rooms prepared for animal comfort",
+
+ "clinicaddress": "Location",
+
+ "listbioof": "List bio of your furry friends",
+
+ "charlie": "Charlie",
+
+ "pethome": "Pets Home",
+
+ "newpet": "New Pet",
+
+ "newadress": "New Address",
+
+ "completeformbelow": "Complete forms below to add address",
+
+ "selectaddress": "Select Address",
+
+ "addressdetails": "Address Details",
+
+ "setdefultaddress": "Set this as my default address",
+
+ "housenumberroom": "House number, room, floor, or block",
+
+ "addyournewfurry": "Add your new furry friend",
+
+ "addphoto": "Add Photo",
+
+ "petname": "Pet name",
+
+ "yourbuddyname": "Your Buddy Name",
+
+ "typeofpet": "Type of pet",
+
+ "selectdate": "Select Date",
+
+ "birthdate": "Birth Date",
+
+ "gender": "Gender",
+
+ "description": "Description",
+
+ "shareabouthestory": "Share about he story",
+
+ "save": "Save",
+
+ "seeall": "See All",
+
+ "lorem":
+  "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna al iqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+
+ "sort": "Filter with Sort",
+ "use_qr": "Show the code to the employee to ensure that the reservation is valid",
+ "activities": "Activities",
+ "sendtoadopt": "Send to Adoption",
+ "veterinarian": "Veterinarian",
+
+ "pettraining": "Pet Training",
+
+ "grooming": "Grooming",
+
+ "miniaturepinscher": "Miniature Pinscher",
+
+ "addnewpet": "Add New Pet",
+
+ "suzy": "Suzy",
+
+ "mainecoon": "Maine Coon",
+
+ "edward": "Edward",
+
+ "hollandlop": "Holland Lop",
+
+ "orderprocessed": "Order Under Processing",
+ "processingbook": "Waiting confirmation",
+ "confirmedorder": "Order Confirmed",
+ "confirmedbook": "Book Confirmed",
+
+ "processingadopt": "Waiting",
+ "confirmedadopt": "Confirmed",
+
+ "youshippingorderhas": "Your Shipping Order\nHas Ready!!!",
+
+ "thakyouforyouyrorder":
+  "Thank you for your order. We are currently\nprocessing your order.",
+
+ "cheerfullyplayful":
+  "Cheerfully, playful friend this lola, she reeds a new home. because her fomer will more and will not be able to make along it",
+
+ "viewall": "View All",
+
+ "orderreceived": "Order Received",
+
+ "hereisthedetailofyourorder":
+  "Here is the detail of your order",
+
+ "orderdetail": "Order Detail",
+
+ "deliveringorder": "Delivering Order",
+
+ "processingorder": "Processing Order",
+
+ "october": "October 15, 2020",
+
+ "gotomyorder": "My order",
+
+ "listyourallorders": "List your all orders",
+
+ "addnewaddress": "Add New Address",
+
+ "promocode": "Promo Code",
+
+ "enterpromocodehere": "Enter Promo Code Here",
+
+ "shippingaddress": "Shipping Address",
+
+ "orderdetails": "Order Details",
+
+ "paymentmethod": "Payment Method",
+
+ "elephantdoll": "Elephant Doll",
+
+ "dogsweterpink": "Dog Sweater Pink",
+
+ "havepromocode": "Have Promo Code?",
+
+ "subtotal": "Sub Total:",
+ "book_no": "Book No",
+ "customer_name": "Customer name",
+ "pet_name": "Pet name",
+ "pet_type": "Pet type",
+ "book_date": "Book date",
+ "book_status": "Book status",
+ "book_waiting":"Waiting",
+ "book_confirmed":"Confirmed",
+ "wanttodelete": "Do you want to delete the pet?",
+ "deletenow": "Delete now",
+ "removeconfirm": "Delete confirmation",
+ "wanttoremove": "Are you sure?",
+ "status_changed": "Status changed successfully",
+ "acceptconfirm": "Accept confirmation",
+ "wanttoaccept": "Are you sure to accept the request? The pet will be removed from the adoption list",
+ "sendconfirm": "Request confirmation",
+ "wanttosend": "The request data will be sent to the animal owner for acceptance or rejection",
+ "yes": "Yes",
+ "no": "No",
+ "sendtous": "Contact us",
+ "writehere": "write here",
+ "cancelorder": "Cancel order",
+ "more_details": "More details",
+ "shipping": "Shipping:",
+ "person_name": "Contact name",
+ "person_number": "Your name",
+ "your_name": "Contact number",
+ "your_number": "Your number",
+ "clinic_name": "Clinic name",
+ "service_name": "Service name",
+ "shippings": "Shipping",
+ "delivery_address": "Delivery address",
+ "tax": "Tax[2%]",
+ "share": "Share",
+ "loginforbook": "You must be logged in to be able to book",
+ "your_address": "Your Address",
+ "grandtotal": "Grand Total:",
+ "cart": "Cart",
+ "orders": "Orders",
+ "verify": "Verify",
+ "notverified": "Phone number problem",
+ "currentorders": "Current orders",
+ "pastorders": "Past orders",
+ "listpastorders": "Tap here to list past orders",
+ "ordersin": "Incoming orders",
+ "confirmorder": "Confirm Order",
+ "addresses": "Addresses",
+ "save_address": "Save Address",
+ "petowner": "Pet owner",
+ "from_my_pet": "From my pets",
+ "from_others": "From others",
+ "choose_owner": "Choose Owner",
+ "checkout": "Checkout",
+ "show_more": "Show more",
+ "show_less": "Show less",
+ "send": "Send",
+ "adopt_request": "Adopt Request",
+ "adopt_request_done":"Adoption request has been sent",
+ "adopt_pet_done":"Your pet has been added to the adoption list",
+ "thakyouforyouyradoptpet":
+ "Thank you for offering your pet for adoption",
+ "pleasefinishyourpayment": "Please finish your payment",
+ "thakyouforyouyradoptrequest":
+ "Thank you for applying for adoption",
+
+ "address": "Address",
+
+ "addnewpayment": "Add New Payment",
+
+ "payment": "Payment",
+
+ "confirm": "Confirm",
+
+ "taylorstreet": "1355 Taylor Street",
+
+ "whiteplains": "White Plains, New York 10601",
+
+ "sycamorestreet": "4191 Sycamore Street",
+
+ "liberycenter": "Liberty Center, Indiana 46766",
+
+ "goodwinavenue": "811 Goodwin Avenue",
+
+ "millwoodwashington": "Millwood, Washington 99212",
+
+ "publishedby": "Published by",
+
+ "lazarus": "St.Lazarus Shelter",
+
+ "froamyou": "3.2km from you",
+
+ "donate": "Donate",
+
+ "allshesneedofyou": "All She's need of you is",
+
+ "water": "Water",
+
+ "walk": "Walk",
+
+ "love": "Love",
+
+ "adoptlola": "Adopt Lola",
+
+ "filter": "Filter",
+
+ "waitingforyou": "Waiting for you",
+
+ "filterproductwithmore":
+  "Filter Products with more specific types",
+
+ "pricerange": "Price Range",
+
+ "boomer": "Boomer",
+
+ "age": "Age",
+
+ "weight": "Weight",
+
+ "sex": "Sex",
+
+ "female": "Female",
+
+ "popular": "Popular",
+
+ "jakarta": "Jakarta",
+
+ "male": "Male",
+
+ "km": "2km",
+
+ "explore": "Explore",
+
+ "brand": "Brand",
+
+ "breed": "Breed",
+
+ "king": "King",
+
+ "pedigree": "Pedigree",
+
+ "baker": "Baker",
+
+ "whiskies": "Whiskies",
+
+ "chomp": "Chomp",
+
+ "pettoys": "Pet Toys",
+
+ "meow": "Meow",
+
+ "basche": "Basche",
+
+ "domino": "Domino",
+
+ "reset": "Back",
+
+ "apply": "Apply",
+
+ "continues": "Continue",
+
+ "findandbuy": "Find and buy your pet needs",
+
+ "searchproduct": "Search Product",
+
+ "searchclinic": "Search Clinic",
+
+ "bookings": "Bookings",
+
+ "all": "All",
+
+ "arrangebasedonthe": "Arrange based on the following types",
+
+ "latestproducts": "Latest Products",
+
+ "bestselling": "Best Selling",
+
+ "lowprice": "Low Price",
+
+ "highestprice": "Highest Price",
+
+ "food": "Food",
+
+ "shampoo": "Shampoo",
+
+ "enteryouremailtoreset":
+  "Enter your email to reset your password",
+
+ "continueswithgoogle": "Continue with google",
+
+ "goodtoread": "Good to Read",
+
+ "continueswithfacebook": "Continue with Facebook",
+
+ "registerwithemail": "Register with Email",
+
+ "alredyhaveanacount": "Already have an account? ",
+
+ "signin": "Sign in",
+
+ "profile": "Profile",
+
+ "edit": "Edit",
+
+ "leilasans": "Leila Sans",
+
+ "freedadel": "Freed Adel",
+
+ "kiev": "Kiev",
+
+ "qassim": "Qassim",
+
+ "mypets": "My pets",
+
+ "invitefriend": "Invite friends",
+
+ "help": "Technical support",
+
+ "setting": "Setting",
+
+ "logout": "Log out",
+
+ "bestselingitem": "Best Selling item",
+
+ "dogthirt": "Dog Striped T-Shirt",
+
+ "enlephantdoll": "Elephant Doll",
+
+ "doggreysweter": "Dog Sweater Grey",
+
+ "dogpinksweter": "Dog Sweater Pink",
+
+ "dogbearheadcap": "Dog Bear Head Cap",
+
+ "petheadcap": "Pet Head Cap",
+
+ "user": "User",
+
+ "pets": "Pets",
+
+ "order": "Order",
+
+ "loginwithyouraccount":
+  "Login with your account lto continue",
+
+ "email": "Email",
+
+ "emailaddress": "Email Address",
+
+ "password": "Password",
+ "newpassword": "New password",
+
+ "forgotpassword": "Forgot Password?",
+
+ "login": "Login",
+
+ "donthaveanaccountyet": "Don't have an account yet? ",
+
+ "register": "Register",
+
+ "createanaccounttostart":
+  "Create an account to start using",
+
+ "name": "Name",
+
+ "yourfullname": "Your Full Name",
+
+ "passwordmustcontainsofcharacter":
+  "Password must contains of character, number, and\nsymbol with minimum 6 characters",
+
+ "bysigningupiagreetothe": "by signing up I agree to the ",
+
+ "termcondition": "term & conditions ",
+
+ "and": "and",
+
+ "privacypolicy": "privacy policy",
+
+ "createaccount": "Create Account",
+
+ "alredyhaveanaccount": "Already have an account? ",
+
+ "forgotpasswords": "Forgot Password",
+
+ "enteryouremailtoresetyourpassword":
+  "Enter your email to reset your password",
+
+ "enteryourregisteredemail":
+  "Enter your registered email and we will send you\nemail contains link to reset your password",
+
+ "submit": "Submit",
+
+ "home": "Home",
+
+ "hello": "Hello",
+
+ "wendi": "Freed,",
+
+ "whatareyoulookingfor": "What are you looking for?",
+
+ "category": "Category",
+
+ "products": "Products",
+
+ "clinics": "Clinics",
+
+  "pets": "PETs",
+
+ "shopping": "Shopping",
+
+ "treatment": "Treatment",
+
+ "pethotel": "Pet Hotel",
+
+ "adoptions": "Adoptions",
+ "add_to_adoptions": "Add pet to adoption",
+ "add_to_card": "Add to cart",
+ "all_pets": "All pets",
+ "find_pet": "Find pet",
+ "searchpet": "Search",
+ "currency": "SR",
+ "petstatus": "Pet status",
+
+ "latestoffers": "Latest Offers",
+
+ "discountforpet": "Discount\n10% for pet\nGrooming",
+
+ "pettreaning": "25% off for\npet Training\n& Hotel",
+ "price": "Price",
+ "thakyouforyouyrpet":"Thank you for adding your pet",
+ "my_pet_done":"Your pet added successfully",
+ "petvacs": "Vaccinations",
+ "8th": "The eight vaccinations for dogs",
+ "4th": "Quadrivalent vaccination for cats",
+ "rabies": "Rabies vaccination",
+ "fleas_and_ticks": "Fleas and ticks",
+
+ "dogs": "Dogs",
+ "cats": "Cats",
+ "fish": "Fish",
+ "birds": "Bird",
+ "turtle": "Turtle",
+ "poultry": "Poultry",
+ "rodents": "Rodents",
+ "cattle": "Cattle",
+ "others": "Others",
+
+ "excellent": "Excellent",
+ "good": "Good",
+ "sick": "Sick",
+
+ "pt_name": "Pet name",
+ "pt_age": "Pet age",
+ "pt_city": "City",
+ "pt_breed": "Pet breed",
+ "pt_weight": "Pet weight",
+ "pt_description": "Pet description",
+
+ "pt_name_msg": "Please fill pet name",
+ "pt_age_msg": "Please fill pet age",
+ "pt_city_msg": "Please fill city",
+ "pt_breed_msg": "Please fill pet breed",
+ "pt_weight_msg": "Please fill pet weight",
+ "pt_description_msg": "Please fill pet description",
+
+ "wrong_password": "Error",
+ "fill_phone": "Phone Error",
+ "fill_password": "Password Error",
+ "phone_length": "Phone Error",
+
+ "wrong_password_msg": "Please check your phone and password",
+ "fill_phone_msg": "Please fill your phone",
+ "fill_password_msg": "Please fill your password",
+ "phone_length_msg": "Please check your phone",
+
+ "updateUser": "Update info",
+ "updateyourdata": "update your info",
+ "updateNow": "Update now",
+
+ "adoptrequest": "Adoption requests"
+}

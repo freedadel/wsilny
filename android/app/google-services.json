@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1099122570337",
+    "project_id": "wsilny",
+    "storage_bucket": "wsilny.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1099122570337:android:55ec71a4ca52b885cbe620",
+        "android_client_info": {
+          "package_name": "com.example.wassilni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1099122570337-rv960ungeht62io3nb6lcavelbpirjnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiba3ofdRF2SoSFwgTRQzfkmGga04mamw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1099122570337-rv960ungeht62io3nb6lcavelbpirjnt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
