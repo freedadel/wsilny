@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wassilni/controllers/auth_controller.dart';
 import 'package:wassilni/views/homescreen/home.dart';
+import 'package:wassilni/views/msgs/chatpage.dart';
 import 'package:wassilni/views/orderscreen/orders.dart';
 import 'package:wassilni/views/user/user.dart';
 import 'package:wassilni/utils/colornotifire.dart';
@@ -10,9 +11,13 @@ import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../authscreen/signin.dart';
 import 'package:easy_localization/easy_localization.dart';
+import '../msgs/messageslist.dart';
 import '../msgs/msgslist.dart';
+import '../msgs/rooms.dart';
 import '/../utils/mediaqury.dart';
 import 'package:get/get.dart';
+import 'package:flutter_firebase_chat_core/flutter_firebase_chat_core.dart';
+
 
 class Bottomhome extends StatefulWidget {
   const Bottomhome({Key? key}) : super(key: key);
@@ -34,23 +39,11 @@ class _BottomhomeState extends State<Bottomhome> {
   //   });
   // }
 late ColorNotifier notifier;
-  getdarkmodepreviousstate() async {
-    final prefs = await SharedPreferences.getInstance();
-    bool? previusstate = prefs.getBool("setIsDark");
-    if (previusstate == null) {
-      notifier.setIsDark = false;
-    } else {
-      notifier.setIsDark = previusstate;
-    }
-  }
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    getdarkmodepreviousstate();
-
-
   }
   @override
   Widget build(BuildContext context) {
@@ -64,7 +57,7 @@ late ColorNotifier notifier;
         _pageOption = [
           const Home(),
           const Orders(),
-          const Messages(),
+          const RoomsPage(),
           const User()
         ];
       }else{
@@ -88,9 +81,7 @@ late ColorNotifier notifier;
         currentIndex: _selectedIndex,
         items: [
           SalomonBottomBarItem(
-            icon: Image.asset("assets/home.png",
-                height: height / 40,
-                color: _selectedIndex == 0 ? white : Colors.grey),
+            icon: Icon(Icons.home_outlined, color: _selectedIndex == 0 ? Colors.white : buttoncolor,),
             title: Text(
               tr("home"),
               style: TextStyle(
@@ -101,11 +92,7 @@ late ColorNotifier notifier;
             selectedColor: buttoncolor,
           ),
           SalomonBottomBarItem(
-              icon: Image.asset(
-                "assets/orders.png",
-                height: height / 40,
-                color: _selectedIndex == 1 ? Colors.white : Colors.grey,
-              ),
+              icon: Icon(Icons.history_rounded, color: _selectedIndex == 1 ? Colors.white : buttoncolor,),
               title: Text(
                 tr("mytrips"),
                 style: TextStyle(
@@ -116,11 +103,7 @@ late ColorNotifier notifier;
               selectedColor: buttoncolor),
 
           SalomonBottomBarItem(
-              icon: Image.asset(
-                "assets/chat.png",
-                height: height / 40,
-                color: _selectedIndex == 2 ? Colors.white : Colors.grey,
-              ),
+              icon: Icon(Icons.textsms_outlined, color: _selectedIndex == 2 ? Colors.white : buttoncolor,),
               title: Text(
                 tr("mychat"),
                 style: TextStyle(
@@ -132,9 +115,7 @@ late ColorNotifier notifier;
 
           SalomonBottomBarItem(
 
-            icon: Image.asset("assets/user.png",
-                height: height / 40,
-                color: _selectedIndex == 3 ? Colors.white : Colors.grey),
+            icon: Icon(Icons.person_outlined, color: _selectedIndex == 3 ? Colors.white : buttoncolor,),
             title: GestureDetector(
               onTap: (){
 

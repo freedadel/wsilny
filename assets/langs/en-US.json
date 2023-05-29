@@ -12,6 +12,8 @@
  "usertype": "User type",
  "customer": "Customer",
  "driver": "Driver",
+ "passengers": "Passenger",
+ "shipping": "Shipping",
  "addphotolicense": "Driving license",
  "addphotocarlicense": "Vehicle license",
  "addphotocarimg": "Car photo",

@@ -12,11 +12,13 @@ import 'package:wassilni/views/msgs/msgsdetails.dart';
 import 'package:wassilni/views/msgs/msgslist.dart';
 import 'package:wassilni/views/orderscreen/orderdetails.dart';
 import 'package:wassilni/views/orderscreen/orders.dart';
+import 'package:wassilni/views/splash.dart';
 import 'package:wassilni/views/user/settings.dart';
 import 'package:wassilni/views/user/user.dart';
 import '../views/authscreen/forgotpassword.dart';
 import '../views/authscreen/registerdriver.dart';
 import '../views/authscreen/usertype.dart';
+import '../views/msgs/chatpage.dart';
 
 
 
@@ -59,7 +61,7 @@ class RouteHelper{
 
   static List<GetPage> routes = [
   GetPage(name: initial, page: ()=>const Bottomhome()),
-    GetPage(name: allMsgs, page: ()=>const Messages()),
+    GetPage(name: allMsgs, page: ()=>const ChatPage(id: '1',)),
     GetPage(name: updatePassword, page: ()=>const UpdatePassword()),
 
     GetPage(name: register, page: ()=>const Register()),
@@ -72,7 +74,6 @@ class RouteHelper{
     GetPage(name: orderDone, page: ()=>const Succsess()),
     GetPage(name: settings, page: ()=>const Settings()),
     GetPage(name: updateUser, page: ()=>const Update()),
-
 
 
     GetPage(name: msgDetails, page: (){

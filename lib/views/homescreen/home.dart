@@ -19,6 +19,7 @@ import 'package:wassilni/controllers/ads_controller.dart';
 import 'package:wassilni/routes/route_helper.dart';
 import 'package:wassilni/utils/show_custom_snackbar.dart';
 import '../../controllers/messages_controller.dart';
+import '../../utils/colors.dart';
 import '../custtomscreen/button.dart';
 import '../custtomscreen/textfild.dart';
 import 'package:wassilni/utils/app_constants.dart';
@@ -33,16 +34,12 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   String dropdownvalue = "";
+  int _groupValue = 0;
+  int _typeValue = 0;
   var changed = false;
   double lat=0;
   double long=0;
-  List cities = [
-    "الرس",
-    "القرين",
-    "رياض الخبراء",
-    "البكيرية",
-    "المطار",
-  ];
+
 
   List shopcatogeryimagelist = [
     "assets/car.png",
@@ -94,7 +91,9 @@ late ColorNotifier notifier;
             from: from,
             to: to,
             lat: lat,
-            long: long
+            long: long,
+            gender: _groupValue,
+            type: _typeValue
         );
         ordersController.saveOrder(orderModel).then((status) {
           print("Send to Controller");
@@ -127,7 +126,7 @@ late ColorNotifier notifier;
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(height: height / 30),
+            SizedBox(height: height / 20),
 
             if(Get.find<AuthController>().userLoggedIN())
             Row(
@@ -188,9 +187,8 @@ late ColorNotifier notifier;
                 ),
               ],
             ),
-            SizedBox(height: height / 130),
-            const SizedBox(),
-            catogery(),
+
+            /*
             SizedBox(height: height / 90),
             Row(
               children: [
@@ -205,8 +203,10 @@ late ColorNotifier notifier;
                 ),
               ],
             ),
-            SizedBox(height: height / 120),
-            CusttomTextfild(tr("write_here"), fromController),
+            */
+            SizedBox(height: height / 130),
+            CusttomTextfild(tr("tripFrom"), fromController),
+            /*
             SizedBox(height: height / 120),
             Row(
               children: [
@@ -221,9 +221,29 @@ late ColorNotifier notifier;
                 ),
               ],
             ),
-            SizedBox(height: height / 120),
-            CusttomTextfild(tr("write_here"), toController),
-            SizedBox(height: height / 120),
+
+             */
+            SizedBox(height: height / 130),
+            CusttomTextfild(tr("tripTo"), toController),
+            SizedBox(height: height / 130),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                typeselect(tr("passengers"), 0),
+                SizedBox(width: width / 50),
+                typeselect(tr("shipping"), 1),
+              ],
+            ),
+            SizedBox(height: height / 130),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                genderselect(tr("male"), 0),
+                SizedBox(width: width / 50),
+                genderselect(tr("female"), 1),
+              ],
+            ),
+            SizedBox(height: height / 30),
             GestureDetector(
               onTap: () {
                   saveOrder();
@@ -515,6 +535,101 @@ late ColorNotifier notifier;
     );
   }
 
+  Widget genderselect(gender, val) {
+    return GestureDetector(
+      onTap: () {
+        setState(
+              () {
+            _groupValue = val as int;
+          },
+        );
+      },
+      child: Container(
+        height: height / 16,
+        width: width / 2.3,
+        decoration: BoxDecoration(
+          border: Border.all(
+              color: _groupValue == val ? buttoncolor : Colors.transparent,
+              width: 2),
+          borderRadius: const BorderRadius.all(
+            Radius.circular(10),
+          ),
+          color: buttoncolor.withOpacity(0.10),
+        ),
+        child: Row(
+          children: [
+            SizedBox(width: width / 20),
+            Text(
+              gender,
+              style: TextStyle(
+                  color: notifier.getblack,
+                  fontSize: height / 50,
+                  fontFamily: 'Tajawal'),
+            ),
+            const Spacer(),
+            Radio(
+              activeColor: buttoncolor,
+              value: val as int,
+              groupValue: _groupValue,
+              onChanged: (value) {
+                setState(() {
+                  _groupValue = value as int;
+                });
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget typeselect(gender, val) {
+    return GestureDetector(
+      onTap: () {
+        setState(
+              () {
+            _typeValue = val as int;
+          },
+        );
+      },
+      child: Container(
+        height: height / 16,
+        width: width / 2.3,
+        decoration: BoxDecoration(
+          border: Border.all(
+              color: _typeValue == val ? buttoncolor : Colors.transparent,
+              width: 2),
+          borderRadius: const BorderRadius.all(
+            Radius.circular(10),
+          ),
+          color: buttoncolor.withOpacity(0.10),
+        ),
+        child: Row(
+          children: [
+            SizedBox(width: width / 20),
+            Text(
+              gender,
+              style: TextStyle(
+                  color: notifier.getblack,
+                  fontSize: height / 50,
+                  fontFamily: 'Tajawal'),
+            ),
+            const Spacer(),
+            Radio(
+              activeColor: buttoncolor,
+              value: val as int,
+              groupValue: _typeValue,
+              onChanged: (value) {
+                setState(() {
+                  _typeValue = value as int;
+                });
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 
 
   Widget ads() {

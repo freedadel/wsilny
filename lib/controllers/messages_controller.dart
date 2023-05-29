@@ -1,6 +1,9 @@
 import 'dart:convert';
-
+import 'dart:io';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:wassilni/Models/msgs_model.dart';
 import 'package:wassilni/routes/route_helper.dart';
 import '../Models/response_model.dart';
@@ -15,6 +18,9 @@ class MessagesController extends GetxController{
   List<dynamic> _messagesList = [];
   List<dynamic> get messagesList => _messagesList;
 
+  List<dynamic> _messagesListDetails = [];
+  List<dynamic> get messagesListDetails => _messagesListDetails;
+
   List<types.Message> _messagesDetailsList = [];
   List<types.Message> get messagesDetailsList => _messagesDetailsList;
 
@@ -24,6 +30,8 @@ class MessagesController extends GetxController{
   bool _isLoadedChat = true;
   bool get isLoadedChat => _isLoadedChat;
 
+
+
   Future<ResponseModel> saveMessage(MsgModel message) async {
     _isLoaded = false;
     update();
@@ -31,12 +39,15 @@ class MessagesController extends GetxController{
 
     late ResponseModel responseModel;
     if(response.statusCode == 200){
-      print(response.body.toString());
+      if (kDebugMode) {
+        print(response.body.toString());
+      }
       getMSGDetails(response.body["receiver_id"].toString());
-      update();
       responseModel = ResponseModel(true, response.body.toString());
     }else{
-      print(response.body.toString());
+      if (kDebugMode) {
+        print(response.body.toString());
+      }
       responseModel = ResponseModel(false, response.statusText!);
     }
     _isLoaded = true;
@@ -52,7 +63,7 @@ class MessagesController extends GetxController{
 
       _messagesList = [];
       _messagesList.addAll(Msg.fromJson(response.body).messages);
-        //print(_popularProductList);
+
 
     }else{
       print("Faild to get messages");
@@ -89,25 +100,30 @@ class MessagesController extends GetxController{
     if(response.statusCode==200){
       print("success got msg details");
 
+      /*
       _messagesDetailsList = [];
-      //_messagesDetailsList.addAll(Msg.fromJson(response.body).messages);
       _messagesDetailsList = (jsonDecode(jsonEncode(response.body)) as List)
           .map((e) => types.Message.fromJson(e as Map<String, dynamic>))
           .toList();
 
 
-      print("Success to get msg details");
+       */
+      _messagesListDetails = [];
+      _messagesListDetails.addAll(Msg.fromJson(response.body).messages);
+      if (kDebugMode) {
+        print("Success to get msg details");
+      }
       responseModel = ResponseModel(true, response.body.toString());
     }else{
       responseModel = ResponseModel(false, response.statusText!);
-      print("Faild to get msg details");
-      print(response.body);
+      if (kDebugMode) {
+        print("Failed to get msg details");
+        print(response.body);
+      }
+
     }
     _isLoadedChat = true;
     update();
     return responseModel;
   }
-
-
-
 }

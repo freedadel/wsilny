@@ -27,6 +27,8 @@ class OrderModel {
   String? to;
   double? lat;
   double? long;
+  int? gender;
+  int? type;
   int? customer_id;
   int? driver_id;
   String? totalAmount;
@@ -42,6 +44,8 @@ class OrderModel {
         this.to,
         this.lat,
         this.long,
+        this.gender,
+        this.type,
         this.customer_id,
         this.driver_id,
         this.totalAmount,
@@ -58,6 +62,8 @@ class OrderModel {
     data["to"] = to;
     data["lat"] = lat;
     data["long"] = long;
+    data["gender"] = gender;
+    data["type"] = type;
     return data;
   }
 
@@ -67,6 +73,8 @@ class OrderModel {
     to = json["to"];
     lat = json["lat"];
     long = json["long"];
+    gender = json["gender"];
+    type = json["type"];
     customer_id=json["customer_id"];
     driver_id=json["driver_id"];
     totalAmount=json["totalAmount"].toString();
