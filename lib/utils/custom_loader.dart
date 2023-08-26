@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:wassilni/utils/colors.dart';
-import 'package:wassilni/utils/dimensions.dart';
+import 'package:wsilny/utils/colors.dart';
+import 'package:wsilny/utils/dimensions.dart';
 
 import 'colornotifire.dart';
 

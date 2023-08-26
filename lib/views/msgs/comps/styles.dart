@@ -1,4 +1,6 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:wsilny/utils/colors.dart';
 
 class Styles {
   static TextStyle h1() {
@@ -15,8 +17,8 @@ class Styles {
 
   static messagesCardStyle(check) {
     return BoxDecoration(
-      borderRadius: BorderRadius.circular(10),
-      color: check ? Colors.indigo.shade300: Colors.grey.shade300,
+      borderRadius: check ?BorderRadius.only(topLeft:Radius.circular(10),bottomRight: Radius.circular(10)):BorderRadius.only(topRight:Radius.circular(10),bottomLeft: Radius.circular(10)),
+      color: check ? buttoncolor: Colors.grey.shade200,
     );
   }
 
@@ -30,7 +32,7 @@ class Styles {
   static messageTextFieldStyle({required Function() onSubmit}) {
     return InputDecoration(
       border: InputBorder.none,
-      hintText: 'Enter Message',
+      hintText: tr("writehere"),
       contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
       suffixIcon: IconButton(onPressed: onSubmit, icon: const Icon(Icons.send)),
     );

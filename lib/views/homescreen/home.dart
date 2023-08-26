@@ -6,23 +6,23 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:wassilni/controllers/auth_controller.dart';
-import 'package:wassilni/controllers/orders_controller.dart';
-import 'package:wassilni/controllers/user_controller.dart';
-import 'package:wassilni/utils/colornotifire.dart';
-import 'package:wassilni/utils/mediaqury.dart';
+import 'package:wsilny/controllers/auth_controller.dart';
+import 'package:wsilny/controllers/orders_controller.dart';
+import 'package:wsilny/controllers/user_controller.dart';
+import 'package:wsilny/utils/colornotifire.dart';
+import 'package:wsilny/utils/mediaqury.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:get/get.dart';
-import 'package:wassilni/Models/orders_model.dart';
-import 'package:wassilni/controllers/ads_controller.dart';
-import 'package:wassilni/routes/route_helper.dart';
-import 'package:wassilni/utils/show_custom_snackbar.dart';
+import 'package:wsilny/Models/orders_model.dart';
+import 'package:wsilny/controllers/ads_controller.dart';
+import 'package:wsilny/routes/route_helper.dart';
+import 'package:wsilny/utils/show_custom_snackbar.dart';
 import '../../controllers/messages_controller.dart';
 import '../../utils/colors.dart';
 import '../custtomscreen/button.dart';
 import '../custtomscreen/textfild.dart';
-import 'package:wassilni/utils/app_constants.dart';
+import 'package:wsilny/utils/app_constants.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class Home extends StatefulWidget {
@@ -249,7 +249,7 @@ late ColorNotifier notifier;
                   saveOrder();
               },
               child: Custombutton.button(
-                tr("wassilni"),
+                tr("wsilny"),
                 width / 1.1,
                 Colors.transparent,
                 notifier.getbuttoncolor,
@@ -340,7 +340,7 @@ late ColorNotifier notifier;
                                         return (Get.find<MessagesController>().getMSGDetails(qOrdersList.qordersList[index].customer_id.toString()).then((status) {
                                                 print("Send Message to Controller");
                                                 if (status.isSuccess) {
-                                                Get.toNamed(RouteHelper.getMsgDetails(qOrdersList.qordersList[index].customer_id));
+                                                Get.toNamed(RouteHelper.getChatPage(qOrdersList.qordersList[index].customer_id));
                                                 } else {
                                                 showCustomSnackBar(status.message);
                                                 }}));

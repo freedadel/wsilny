@@ -1,17 +1,18 @@
 
+import 'package:confirm_dialog/confirm_dialog.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_share/flutter_share.dart';
-import 'package:wassilni/controllers/location_controller.dart';
-import 'package:wassilni/controllers/auth_controller.dart';
-import 'package:wassilni/controllers/user_controller.dart';
-import 'package:wassilni/loream.dart';
-import 'package:wassilni/utils/app_constants.dart';
-import 'package:wassilni/utils/colornotifire.dart';
-import 'package:wassilni/utils/colors.dart';
+import 'package:wsilny/controllers/location_controller.dart';
+import 'package:wsilny/controllers/auth_controller.dart';
+import 'package:wsilny/controllers/user_controller.dart';
+import 'package:wsilny/loream.dart';
+import 'package:wsilny/utils/app_constants.dart';
+import 'package:wsilny/utils/colornotifire.dart';
+import 'package:wsilny/utils/colors.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:wassilni/utils/mediaqury.dart';
-import 'package:wassilni/views/bottomsheet/bottombar.dart';
+import 'package:wsilny/utils/mediaqury.dart';
+import 'package:wsilny/views/bottomsheet/bottombar.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:get/get.dart';
@@ -200,12 +201,34 @@ class _UserState extends State<User> {
                 onTap: () {
                   if(Get.find<AuthController>().userLoggedIN()){
                     Get.find<AuthController>().clearSharedData();
-                    Get.find<LocationController>().clearAddressList();
+                    //Get.find<LocationController>().clearAddressList();
                     //MaterialPageRoute(builder: (context) => const SignIn());
                     Get.offNamed(RouteHelper.getLogin());
                   }
                 },
                 child: profiletype(tr("logout"), "assets/Logouts.png"),
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: width / 20),
+                child: const Divider(
+                  color: Color(0xffE0E0E0),
+                ),
+              ),
+              SizedBox(height: height/10,),
+              GestureDetector(
+                onTap: () async {
+                  if (await confirm(context,content: const Text("هل انت متأكد من حذف الحساب نهائياً؟"),textCancel: const Text("لا"),textOK: const Text("نعم، حذف"))) {
+                    if(Get.find<AuthController>().userLoggedIN()){
+                      Get.find<AuthController>().clearData(AppConstants.USER_ID);
+                      Get.find<AuthController>().clearSharedData();
+                      //Get.find<LocationController>().clearAddressList();
+                      //MaterialPageRoute(builder: (context) => const SignIn());
+                      Get.offNamed(RouteHelper.getLogin());
+                    }
+                  }
+                  return print('pressedCancel');
+                },
+                child: profiletypeSmall(tr("deletemyaccount"), "assets/delete.png"),
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: width / 20),
@@ -258,6 +281,38 @@ class _UserState extends State<User> {
             Icons.arrow_forward_ios,
             size: height / 40,
             color: const Color(0xffE0E0E0),
+          ),
+          SizedBox(width: width / 20),
+        ],
+      ),
+    );
+  }
+
+  Widget profiletypeSmall(name, image) {
+    return Container(
+      color: Colors.transparent,
+      child: Row(
+        children: [
+          SizedBox(width: width / 20),
+          CircleAvatar(
+            backgroundColor: Colors.red.withOpacity(0.10),
+            child: Image.asset(image,
+                height: height / 50, color: Colors.red),
+          ),
+          SizedBox(width: width / 50),
+          Text(
+            name,
+            style: TextStyle(
+              color: Colors.red,
+              fontSize: height / 70,
+              fontFamily: 'Tajawal',
+            ),
+          ),
+          const Spacer(),
+          Icon(
+            Icons.arrow_forward_ios,
+            size: height / 80,
+            color: Colors.red,
           ),
           SizedBox(width: width / 20),
         ],

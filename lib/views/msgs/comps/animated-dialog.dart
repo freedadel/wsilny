@@ -1,7 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:wassilni/views/msgs/comps/widgets.dart';
+import 'package:wsilny/utils/colors.dart';
+import 'package:wsilny/views/msgs/comps/widgets.dart';
 
 import '../chatpage.dart';
 
@@ -40,7 +41,7 @@ class _AnimatedDialogState extends State<AnimatedDialog> {
           height: widget.height,
           width: widget.width,
           decoration: BoxDecoration(
-              color:widget.width == 0 ? Colors.indigo.withOpacity(0):  Colors.indigo.shade400,
+              color:widget.width == 0 ? Colors.indigo.withOpacity(0):  buttoncolor,
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(widget.width == 0 ? 100 : 0),
                 bottomRight: Radius.circular(widget.width == 0 ? 100 : 0),

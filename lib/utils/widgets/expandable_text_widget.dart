@@ -1,9 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:wassilni/utils/colors.dart';
-import 'package:wassilni/utils/dimensions.dart';
-import 'package:wassilni/utils/widgets/small_text.dart';
+import 'package:wsilny/utils/colors.dart';
+import 'package:wsilny/utils/dimensions.dart';
+import 'package:wsilny/utils/widgets/small_text.dart';
 
 import '../colornotifire.dart';
 

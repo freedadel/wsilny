@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:wassilni/views/custtomscreen/button.dart';
-import 'package:wassilni/utils/colornotifire.dart';
+import 'package:wsilny/views/custtomscreen/button.dart';
+import 'package:wsilny/utils/colornotifire.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:easy_localization/easy_localization.dart';

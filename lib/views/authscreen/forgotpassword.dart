@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:wassilni/utils/custom_loader.dart';
-import 'package:wassilni/views/custtomscreen/appbar.dart';
-import 'package:wassilni/views/custtomscreen/button.dart';
-import 'package:wassilni/views/custtomscreen/passwordcusttomtextfild.dart';
-import 'package:wassilni/routes/route_helper.dart';
-import 'package:wassilni/utils/colornotifire.dart';
+import 'package:wsilny/utils/custom_loader.dart';
+import 'package:wsilny/views/custtomscreen/appbar.dart';
+import 'package:wsilny/views/custtomscreen/button.dart';
+import 'package:wsilny/views/custtomscreen/passwordcusttomtextfild.dart';
+import 'package:wsilny/routes/route_helper.dart';
+import 'package:wsilny/utils/colornotifire.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:wassilni/utils/mediaqury.dart';
+import 'package:wsilny/utils/mediaqury.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

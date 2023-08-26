@@ -4,8 +4,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:wassilni/Models/msgs_model.dart';
-import 'package:wassilni/routes/route_helper.dart';
+import 'package:wsilny/Models/msgs_model.dart';
+import 'package:wsilny/routes/route_helper.dart';
 import '../Models/response_model.dart';
 import '../repository/messages_repo.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
@@ -33,7 +33,7 @@ class MessagesController extends GetxController{
 
 
   Future<ResponseModel> saveMessage(MsgModel message) async {
-    _isLoaded = false;
+    _isLoadedChat = false;
     update();
     Response response = await messagesRepo.saveMessage(message);
 
@@ -42,6 +42,7 @@ class MessagesController extends GetxController{
       if (kDebugMode) {
         print(response.body.toString());
       }
+
       getMSGDetails(response.body["receiver_id"].toString());
       responseModel = ResponseModel(true, response.body.toString());
     }else{
@@ -50,7 +51,55 @@ class MessagesController extends GetxController{
       }
       responseModel = ResponseModel(false, response.statusText!);
     }
-    _isLoaded = true;
+    _isLoadedChat = true;
+    update();
+    return responseModel;
+  }
+
+  Future<ResponseModel> confirmOrder(MsgModel message) async {
+    _isLoadedChat = false;
+    update();
+    Response response = await messagesRepo.confirmOrder(message);
+
+    late ResponseModel responseModel;
+    if(response.statusCode == 200){
+      if (kDebugMode) {
+        print(response.body.toString());
+      }
+
+      getMSGDetails(response.body["receiver_id"].toString());
+      responseModel = ResponseModel(true, response.body.toString());
+    }else{
+      if (kDebugMode) {
+        print(response.body.toString());
+      }
+      responseModel = ResponseModel(false, response.statusText!);
+    }
+    _isLoadedChat = true;
+    update();
+    return responseModel;
+  }
+
+  Future<ResponseModel> cancelOrder(MsgModel message) async {
+    _isLoadedChat = false;
+    update();
+    Response response = await messagesRepo.cancelOrder(message);
+
+    late ResponseModel responseModel;
+    if(response.statusCode == 200){
+      if (kDebugMode) {
+        print(response.body.toString());
+      }
+
+      getMSGDetails(response.body["receiver_id"].toString());
+      responseModel = ResponseModel(true, response.body.toString());
+    }else{
+      if (kDebugMode) {
+        print(response.body.toString());
+      }
+      responseModel = ResponseModel(false, response.statusText!);
+    }
+    _isLoadedChat = true;
     update();
     return responseModel;
   }
@@ -98,7 +147,6 @@ class MessagesController extends GetxController{
     Response response = await messagesRepo.getCustomerDetailsList(id);
     late ResponseModel responseModel;
     if(response.statusCode==200){
-      print("success got msg details");
 
       /*
       _messagesDetailsList = [];

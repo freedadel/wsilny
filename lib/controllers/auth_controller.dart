@@ -1,9 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:wassilni/Models/response_model.dart';
-import 'package:wassilni/Models/sign_up_body.dart';
+import 'package:wsilny/Models/response_model.dart';
+import 'package:wsilny/Models/sign_up_body.dart';
 import 'package:get/get.dart';
-import 'package:wassilni/routes/route_helper.dart';
+import 'package:wsilny/routes/route_helper.dart';
 import '../Models/address_model.dart';
 import '../repository/auth_repo.dart';
 import '../utils/show_custom_snackbar.dart';
@@ -63,6 +63,7 @@ class AuthController extends GetxController implements GetxService{
     _isLoading = true;
     update();
     String? token = await FirebaseMessaging.instance.getToken();
+    print(token);
     Response response = await authRepo.login(phone,password,token!);
     late ResponseModel responseModel;
     if(response.statusCode == 200){
@@ -131,6 +132,22 @@ class AuthController extends GetxController implements GetxService{
 
   bool clearSharedData(){
     return authRepo.clearSharedData();
+  }
+
+  Future<ResponseModel> clearData(String user_id) async {
+    _isLoading = true;
+    update();
+    Response response = await authRepo.clearData(user_id);
+    late ResponseModel responseModel;
+    if(response.statusCode != 200)
+    {
+      showCustomSnackBar(tr("notdeleted"));
+      responseModel = ResponseModel(false, response.statusText!);
+    }
+    _isLoading = false;
+    update();
+
+    return responseModel;
   }
 
 

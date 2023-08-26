@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:wassilni/utils/dimensions.dart';
+import 'package:wsilny/utils/dimensions.dart';
 
 class AppIcon extends StatelessWidget {
   final IconData icon;

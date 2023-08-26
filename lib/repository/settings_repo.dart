@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:ui';
 
-import 'package:wassilni/utils/app_constants.dart';
+import 'package:wsilny/utils/app_constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../api/api_client.dart';
 

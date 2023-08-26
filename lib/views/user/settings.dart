@@ -1,11 +1,11 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:wassilni/controllers/settings_controller.dart';
-import 'package:wassilni/utils/colornotifire.dart';
-import 'package:wassilni/utils/colors.dart';
+import 'package:wsilny/controllers/settings_controller.dart';
+import 'package:wsilny/utils/colornotifire.dart';
+import 'package:wsilny/utils/colors.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:wassilni/utils/mediaqury.dart';
+import 'package:wsilny/utils/mediaqury.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:get/get.dart';

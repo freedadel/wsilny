@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:wassilni/controllers/messages_controller.dart';
-import 'package:wassilni/views/msgs/comps/styles.dart';
+import 'package:wsilny/controllers/messages_controller.dart';
+import 'package:wsilny/utils/app_constants.dart';
+import 'package:wsilny/utils/colors.dart';
+import 'package:wsilny/utils/mediaqury.dart';
+import 'package:wsilny/views/msgs/comps/styles.dart';
 
 import 'animated-dialog.dart';
 import 'package:get/get.dart';
@@ -14,10 +17,10 @@ class ChatWidgets {
         child: ListTile(
           onTap: onTap,
           contentPadding: const EdgeInsets.all(5),
-          leading: const Padding(
+          leading: Padding(
             padding: EdgeInsets.all(0.0),
             child: CircleAvatar(
-                backgroundColor: Colors.grey,
+                backgroundColor: Colors.grey.shade300,
                 child: Icon(
                   Icons.person,
                   size: 30,
@@ -46,7 +49,7 @@ class ChatWidgets {
           children: [
             CircleAvatar(
               radius: 25,
-              backgroundColor: Colors.grey,
+              backgroundColor: Colors.grey.shade300,
               child: Icon(
                 Icons.person,
                 size: 40,
@@ -60,8 +63,8 @@ class ChatWidgets {
     );
   }
 
-  static Widget messagesCard(i, message, time) {
-    bool check = i % 2 == 0;
+  static Widget messagesCard(i, message, time,id) {
+    bool check = (AppConstants.USER_ID) == id;
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Row(
@@ -69,35 +72,44 @@ class ChatWidgets {
         children: [
           if (check) const Spacer(),
           if (!check)
-            const CircleAvatar(
+            CircleAvatar(
               child: Icon(
                 Icons.person,
                 size: 13,
                 color: Colors.white,
               ),
-              backgroundColor: Colors.grey,
+              backgroundColor: Colors.grey.shade300,
               radius: 10,
             ),
           ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 250),
-            child: Container(
-              margin: const EdgeInsets.all(8),
-              padding: const EdgeInsets.all(10),
-              child: Text(
-                '$message\n\n$time',
-                style: TextStyle(color: check ? Colors.white : Colors.black),
-              ),
-              decoration: Styles.messagesCardStyle(check),
+            child: Column(
+              children: [
+                Text(
+                  '$time',
+                  style: TextStyle(color: buttoncolor,fontSize: height/80),
+                ),
+                Container(
+                  margin: const EdgeInsets.all(8),
+                  padding: const EdgeInsets.all(10),
+                  decoration: Styles.messagesCardStyle(check),
+                  child:
+                      Text(
+                        '$message',
+                        style: TextStyle(color: check ? Colors.white : Colors.black,fontSize: height/50),
+                      ),
+                ),
+              ],
             ),
           ),
           if (check)
-            const CircleAvatar(
+            CircleAvatar(
               child: Icon(
                 Icons.person,
                 size: 13,
                 color: Colors.white,
               ),
-              backgroundColor: Colors.grey,
+              backgroundColor: buttoncolor,
               radius: 10,
             ),
           if (!check) const Spacer(),
@@ -122,14 +134,14 @@ class ChatWidgets {
 
   static drawer() {
     return Drawer(
-      backgroundColor: Colors.indigo.shade400,
+      backgroundColor: buttoncolor,
       child: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 18.0, horizontal: 20),
           child: Theme(
             data: ThemeData.dark(),
             child: Column(
-              children: const [
+              children: [
                 CircleAvatar(
                   child: Icon(
                     Icons.person,
@@ -137,7 +149,7 @@ class ChatWidgets {
                     color: Colors.white,
                   ),
                   radius: 60,
-                  backgroundColor: Colors.grey,
+                  backgroundColor: Colors.grey.shade300,
                 ),
                 SizedBox(height: 10),
                 Divider(

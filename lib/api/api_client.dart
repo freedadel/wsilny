@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:wassilni/utils/app_constants.dart';
+import 'package:wsilny/utils/app_constants.dart';
 // ignore: depend_on_referenced_packages
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';

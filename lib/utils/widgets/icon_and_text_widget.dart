@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:wassilni/utils/widgets/small_text.dart';
+import 'package:wsilny/utils/widgets/small_text.dart';
 
 class IconAndTextWidget extends StatelessWidget {
   final String text;

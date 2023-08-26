@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
 import 'package:flutter_firebase_chat_core/flutter_firebase_chat_core.dart';
-import 'package:wassilni/views/authscreen/signin.dart';
-import 'package:wassilni/views/msgs/login.dart';
+import 'package:wsilny/views/authscreen/signin.dart';
+import 'package:wsilny/views/msgs/login.dart';
 
 import '../homescreen/home.dart';
 import 'chat.dart';

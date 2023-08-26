@@ -1,6 +1,6 @@
-import 'package:wassilni/Models/orders_model.dart';
-import 'package:wassilni/api/api_client.dart';
-import 'package:wassilni/utils/app_constants.dart';
+import 'package:wsilny/Models/orders_model.dart';
+import 'package:wsilny/api/api_client.dart';
+import 'package:wsilny/utils/app_constants.dart';
 import 'package:get/get.dart';
 
 class OrdersRepo extends GetxService{

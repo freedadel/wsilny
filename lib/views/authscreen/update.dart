@@ -4,12 +4,12 @@ import 'dart:convert';
 
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
-import 'package:wassilni/Models/sign_up_body.dart';
-import 'package:wassilni/controllers/user_controller.dart';
-import 'package:wassilni/utils/custom_loader.dart';
-import 'package:wassilni/utils/show_custom_snackbar.dart';
-import 'package:wassilni/utils/colornotifire.dart';
-import 'package:wassilni/utils/mediaqury.dart';
+import 'package:wsilny/Models/sign_up_body.dart';
+import 'package:wsilny/controllers/user_controller.dart';
+import 'package:wsilny/utils/custom_loader.dart';
+import 'package:wsilny/utils/show_custom_snackbar.dart';
+import 'package:wsilny/utils/colornotifire.dart';
+import 'package:wsilny/utils/mediaqury.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:get/get.dart';

@@ -1,5 +1,5 @@
-import 'package:wassilni/api/api_client.dart';
-import 'package:wassilni/utils/app_constants.dart';
+import 'package:wsilny/api/api_client.dart';
+import 'package:wsilny/utils/app_constants.dart';
 import 'package:get/get.dart';
 
 class UserRepo extends GetxService{

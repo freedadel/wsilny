@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:wassilni/controllers/auth_controller.dart';
-import 'package:wassilni/views/homescreen/home.dart';
-import 'package:wassilni/views/msgs/chatpage.dart';
-import 'package:wassilni/views/orderscreen/orders.dart';
-import 'package:wassilni/views/user/user.dart';
-import 'package:wassilni/utils/colornotifire.dart';
-import 'package:wassilni/utils/colors.dart';
+import 'package:wsilny/controllers/auth_controller.dart';
+import 'package:wsilny/views/homescreen/home.dart';
+import 'package:wsilny/views/msgs/chatpage.dart';
+import 'package:wsilny/views/orderscreen/orders.dart';
+import 'package:wsilny/views/user/user.dart';
+import 'package:wsilny/utils/colornotifire.dart';
+import 'package:wsilny/utils/colors.dart';
 import 'package:provider/provider.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -13,11 +13,8 @@ import '../authscreen/signin.dart';
 import 'package:easy_localization/easy_localization.dart';
 import '../msgs/messageslist.dart';
 import '../msgs/msgslist.dart';
-import '../msgs/rooms.dart';
 import '/../utils/mediaqury.dart';
 import 'package:get/get.dart';
-import 'package:flutter_firebase_chat_core/flutter_firebase_chat_core.dart';
-
 
 class Bottomhome extends StatefulWidget {
   const Bottomhome({Key? key}) : super(key: key);
@@ -57,7 +54,7 @@ late ColorNotifier notifier;
         _pageOption = [
           const Home(),
           const Orders(),
-          const RoomsPage(),
+          const Messages(),
           const User()
         ];
       }else{

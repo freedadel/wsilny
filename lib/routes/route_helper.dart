@@ -1,20 +1,20 @@
-import 'package:wassilni/views/authscreen/register.dart';
-import 'package:wassilni/views/authscreen/signin.dart';
-import 'package:wassilni/views/authscreen/update.dart';
-import 'package:wassilni/views/authscreen/updatepassword.dart';
-import 'package:wassilni/views/bottomsheet/bottombar.dart';
+import 'package:wsilny/views/authscreen/register.dart';
+import 'package:wsilny/views/authscreen/signin.dart';
+import 'package:wsilny/views/authscreen/update.dart';
+import 'package:wsilny/views/authscreen/updatepassword.dart';
+import 'package:wsilny/views/bottomsheet/bottombar.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
-import 'package:wassilni/views/homescreen/success.dart';
-import 'package:wassilni/views/msgs/msgsdetails.dart';
-import 'package:wassilni/views/msgs/msgslist.dart';
-import 'package:wassilni/views/orderscreen/orderdetails.dart';
-import 'package:wassilni/views/orderscreen/orders.dart';
-import 'package:wassilni/views/splash.dart';
-import 'package:wassilni/views/user/settings.dart';
-import 'package:wassilni/views/user/user.dart';
+import 'package:wsilny/views/homescreen/success.dart';
+import 'package:wsilny/views/msgs/msgsdetails.dart';
+import 'package:wsilny/views/msgs/msgslist.dart';
+import 'package:wsilny/views/orderscreen/orderdetails.dart';
+import 'package:wsilny/views/orderscreen/orders.dart';
+import 'package:wsilny/views/splash.dart';
+import 'package:wsilny/views/user/settings.dart';
+import 'package:wsilny/views/user/user.dart';
 import '../views/authscreen/forgotpassword.dart';
 import '../views/authscreen/registerdriver.dart';
 import '../views/authscreen/usertype.dart';
@@ -40,11 +40,13 @@ class RouteHelper{
   static const String pickAddress = "/pick-address";
   static const String updateUser = "/update-user";
   static const String forgot = "/forgot";
+  static const String chatPage = "/chat-page";
 
 
   static String getInitial()=> initial;
   static String getOrder(int pageId)=>'$orderDetails?pageId=$pageId';
   static String getMsgDetails(int pageId)=>'$msgDetails?pageId=$pageId';
+  static String getChatPage(int pageId)=>'$chatPage?pageId=$pageId';
   static String getRegister()=>register;
   static String getRegisterDriver()=>registerDriver;
   static String getUsertype()=>usertype;
@@ -61,7 +63,6 @@ class RouteHelper{
 
   static List<GetPage> routes = [
   GetPage(name: initial, page: ()=>const Bottomhome()),
-    GetPage(name: allMsgs, page: ()=>const ChatPage(id: '1',)),
     GetPage(name: updatePassword, page: ()=>const UpdatePassword()),
 
     GetPage(name: register, page: ()=>const Register()),
@@ -79,6 +80,13 @@ class RouteHelper{
     GetPage(name: msgDetails, page: (){
       var pageId = Get.parameters['pageId'];
       return MessageDetails(pageId: int.parse(pageId!));
+    },
+      transition: Transition.fadeIn,
+    ),
+
+    GetPage(name: chatPage, page: (){
+      var pageId = Get.parameters['pageId'];
+      return ChatPage(id: pageId!,);
     },
       transition: Transition.fadeIn,
     ),

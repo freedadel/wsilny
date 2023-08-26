@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wassilni/utils/colors.dart';
-import 'package:wassilni/utils/mediaqury.dart';
+import 'package:wsilny/utils/colors.dart';
+import 'package:wsilny/utils/mediaqury.dart';
 import 'package:provider/provider.dart';
 
 import '/../utils/colornotifire.dart';

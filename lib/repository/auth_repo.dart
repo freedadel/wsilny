@@ -1,7 +1,7 @@
 import 'dart:ffi';
 
-import 'package:wassilni/api/api_client.dart';
-import 'package:wassilni/utils/app_constants.dart';
+import 'package:wsilny/api/api_client.dart';
+import 'package:wsilny/utils/app_constants.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -54,6 +54,10 @@ class AuthRepo extends GetxService{
     return await apiClient.postData(AppConstants.LOGIN_URI+"-verify", {"phone":phone});
   }
 
+  Future<Response> clearData(String user_id) async {
+    return await apiClient.postData(AppConstants.LOGIN_URI+"-delete", {"user_id":user_id});
+  }
+
 
   Future<bool> saveUserToken(String token) async {
     apiClient.token = token;
@@ -93,6 +97,8 @@ class AuthRepo extends GetxService{
 
     return true;
   }
+
+
 
 }
 

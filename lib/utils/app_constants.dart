@@ -1,9 +1,11 @@
+import 'dart:ffi';
+
 import 'language.dart';
 
 class AppConstants{
   static const String APP_NAME = "Wsilny";
   static const int APP_VSERSION = 1;
-  static const String BASE_URL = "http://admin.wsilny.com/";
+  static const String BASE_URL = "https://admin.wsilny.com/";
 
   //auth route
   static const String REGISTRATION_URI = "api/auth/register";
@@ -13,6 +15,8 @@ class AppConstants{
   static const String ALL_MESSAGES_URI = "api/all-messages";
 
   static const String STORE_MESSAGE_URI = "api/message-store";
+  static const String CONFIRM_ORDER_URI = "api/confirm-order";
+  static const String CANCEL_ORDER_URI = "api/cancel-order";
   static const String STORE_ORDER_URI = "api/order-store";
   static const String STORE_ADDRESS_URI = "api/address-store";
   static const String ADD_ADDRESS_URI = "api/add-address";
@@ -58,6 +62,8 @@ class AppConstants{
   static String USERNAME = "";
   static String PERMISSION = "";
   static String USER_ID = "";
+  static bool CONFIRM_ORDER = false;
+  static
   List<dynamic> MESSAGE_LIST = [];
 
   static const String LANGUAGE__LANGUAGE_CODE_KEY =

@@ -2,10 +2,10 @@ import 'dart:ui';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:wassilni/Models/response_model.dart';
-import 'package:wassilni/Models/sign_up_body.dart';
+import 'package:wsilny/Models/response_model.dart';
+import 'package:wsilny/Models/sign_up_body.dart';
 import 'package:get/get.dart';
-import 'package:wassilni/repository/settings_repo.dart';
+import 'package:wsilny/repository/settings_repo.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../Models/address_model.dart';
 import '../main.dart';

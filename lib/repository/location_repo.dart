@@ -1,6 +1,6 @@
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:wassilni/Models/address_model.dart';
-import 'package:wassilni/api/api_client.dart';
+import 'package:wsilny/Models/address_model.dart';
+import 'package:wsilny/api/api_client.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../utils/app_constants.dart';

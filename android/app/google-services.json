@@ -29,6 +29,49 @@
             {
               "client_id": "1099122570337-rv960ungeht62io3nb6lcavelbpirjnt.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "1099122570337-p5nvam3s9qmnbqkq6384u26qu3jdo0m0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.modern.wsilny"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1099122570337:android:542dc0c5eeea2c6ccbe620",
+        "android_client_info": {
+          "package_name": "com.modern.wsilny"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1099122570337-rv960ungeht62io3nb6lcavelbpirjnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiba3ofdRF2SoSFwgTRQzfkmGga04mamw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1099122570337-rv960ungeht62io3nb6lcavelbpirjnt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1099122570337-p5nvam3s9qmnbqkq6384u26qu3jdo0m0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.modern.wsilny"
+              }
             }
           ]
         }

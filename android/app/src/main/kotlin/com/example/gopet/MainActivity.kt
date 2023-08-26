@@ -1,6 +1,7 @@
-package com.example.wassilni
+package com.modern.wsilny
 
 import io.flutter.embedding.android.FlutterActivity
 
 class MainActivity: FlutterActivity() {
 }
+

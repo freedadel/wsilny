@@ -7,7 +7,7 @@
  "search": "Search",
  "mytrips": "Trips",
  "mychat": "Chats",
- "wassilni": "wassilni",
+ "wsilny": "wsilny",
  "newUser": "New user",
  "usertype": "User type",
  "customer": "Customer",
@@ -17,6 +17,7 @@
  "addphotolicense": "Driving license",
  "addphotocarlicense": "Vehicle license",
  "addphotocarimg": "Car photo",
+ "deletemyaccount": "Delete my account",
 
  "yourpetispartofourfamily":
   "Your pet is part of our family",
@@ -55,7 +56,7 @@
  "find_product": "Find product",
 
  "rabbit": "Rabbit",
- "exploremoreonwassilni": "Explore More on Wassilni",
+ "exploremoreonwsilny": "Explore More on Wassilni",
 
  "booking_date": "Booking date",
  "comments": "Comments",

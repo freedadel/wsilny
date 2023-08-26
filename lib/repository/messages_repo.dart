@@ -1,6 +1,6 @@
-import 'package:wassilni/Models/orders_model.dart';
-import 'package:wassilni/api/api_client.dart';
-import 'package:wassilni/utils/app_constants.dart';
+import 'package:wsilny/Models/orders_model.dart';
+import 'package:wsilny/api/api_client.dart';
+import 'package:wsilny/utils/app_constants.dart';
 import 'package:get/get.dart';
 
 import '../Models/msgs_model.dart';
@@ -25,6 +25,14 @@ class MessagesRepo extends GetxService{
 
   Future<Response> saveMessage(MsgModel message) async {
     return await apiClient.postData(AppConstants.STORE_MESSAGE_URI, message.toJson());
+  }
+
+  Future<Response> confirmOrder(MsgModel message) async {
+    return await apiClient.postData(AppConstants.CONFIRM_ORDER_URI, message.toJson());
+  }
+
+  Future<Response> cancelOrder(MsgModel message) async {
+    return await apiClient.postData(AppConstants.CANCEL_ORDER_URI, message.toJson());
   }
 
 }

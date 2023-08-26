@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:wassilni/Models/sign_up_body.dart';
-import 'package:wassilni/views/authscreen/register.dart';
+import 'package:wsilny/Models/sign_up_body.dart';
+import 'package:wsilny/views/authscreen/register.dart';
 
 import '../homescreen/home.dart';
 import 'Register.dart';

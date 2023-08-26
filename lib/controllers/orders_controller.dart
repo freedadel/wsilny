@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:wassilni/routes/route_helper.dart';
+import 'package:wsilny/routes/route_helper.dart';
 import '../Models/orders_model.dart';
 import '../Models/response_model.dart';
 import '../repository/orders_repo.dart';

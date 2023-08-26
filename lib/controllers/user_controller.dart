@@ -1,9 +1,12 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:get/get.dart';
-import 'package:wassilni/controllers/auth_controller.dart';
+import 'package:wsilny/controllers/auth_controller.dart';
 import '../Models/response_model.dart';
 import '../Models/user_model.dart';
 import '../repository/user_repo.dart';
+import '../routes/route_helper.dart';
 import '../utils/app_constants.dart';
+import '../utils/show_custom_snackbar.dart';
 
 class UserController extends GetxController{
   final UserRepo userRepo;
@@ -23,9 +26,15 @@ class UserController extends GetxController{
     Response response = await userRepo.getUserInfo();
 
     if(response.statusCode==200){
-      print(response.body);
-        _userInfo = UserModel.fromJson(response.body);
-        responseModel = ResponseModel(true, "successfully");
+      print(response.body['status']);
+        if(response.body['status'] == 200){
+          _userInfo = UserModel.fromJson(response.body['user']);
+          responseModel = ResponseModel(true, "successfully");
+        }else{
+          showCustomSnackBar(tr("notverified"));
+          Get.toNamed(RouteHelper.getLogin());
+        }
+
 
     }else{
       responseModel = ResponseModel(false, response.statusText!);

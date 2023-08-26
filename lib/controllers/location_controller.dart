@@ -4,8 +4,8 @@ import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:wassilni/Models/response_model.dart';
-import 'package:wassilni/repository/location_repo.dart';
+import 'package:wsilny/Models/response_model.dart';
+import 'package:wsilny/repository/location_repo.dart';
 
 import '../Models/address_model.dart';
 

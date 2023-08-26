@@ -8,7 +8,8 @@
   "search": "بحث",
   "mytrips": "رحلاتي",
   "mychat": "محادثاتي",
-  "wassilni": "وصلني",
+  "wsilny": "وصلني",
+  "deletemyaccount": "حذف حسابي",
   "yourpetispartofourfamily":
   "Your pet is part of our family",
 
@@ -47,7 +48,7 @@
   "find_product": "البحث عن منتج",
 
   "rabbit": "Rabbit",
-  "exploremoreonwassilni": "Explore More on Wassilni",
+  "exploremoreonwsilny": "Explore More on Wassilni",
 
   "booking_date": "تاريخ الحجز",
   "comments": "ملاحظات",
